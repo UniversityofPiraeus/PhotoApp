@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gr.unipi.photoapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="22" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme" >
+        <activity
+            android:name=".activities.CameraActivity"
+            android:label="@string/title_activity_camera" >                      
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> 
+        </activity>
+        <activity
+            android:name="gr.unipi.photoapp.activities.PhotoListActivity"
+            android:label="@string/title_activity_photo_list" >
+        </activity>
+        <activity
+            android:name="gr.unipi.photoapp.activities.CustomImageActivity"
+            android:label="@string/title_activity_custom_image" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.sensor.gyroscope" />
+    
+</manifest>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name" translatable="false">PhotoApp</string>
+    <string name="about_message" translatable="false">
+	<![CDATA[
+            
+        ]]>
+    </string>
+    <string name="title_activity_camera" translatable="false">Photo App</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="hello_world" translatable="false">Hello world!</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="image_capture" translatable="false">Capture</string>
+    <string name="image_info" translatable="false">More</string>
+    <string name="title_activity_photo_list" translatable="false">List</string>
+    <string name="title_activity_custom_image" translatable="false">View Image</string>
+    
+
+    <string name="north" translatable="false">North</string>
+    <string name="north_east" translatable="false">North East</string>
+    <string name="east" translatable="false">East</string>
+    <string name="south_east" translatable="false">South East</string>
+    <string name="south" translatable="false">South</string>
+    <string name="south_west" translatable="false">South West</string>
+    <string name="west" translatable="false">West</string>
+    <string name="north_west" translatable="false">North West</string>
+    
+</resources>

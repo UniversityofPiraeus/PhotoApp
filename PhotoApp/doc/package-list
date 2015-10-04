@@ -1,0 +1,13 @@
+android.support.v7.appcompat
+gr.unipi.photoapp
+gr.unipi.photoapp.activities
+gr.unipi.photoapp.adapters
+gr.unipi.photoapp.db.controller
+gr.unipi.photoapp.db.model
+gr.unipi.photoapp.directory
+gr.unipi.photoapp.fragments
+gr.unipi.photoapp.sensor
+gr.unipi.photoapp.services.gps
+gr.unipi.photoapp.touch
+gr.unipi.photoapp.util
+gr.unipi.photoapp.views
