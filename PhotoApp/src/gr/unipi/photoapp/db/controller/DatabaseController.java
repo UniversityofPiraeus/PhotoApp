@@ -104,13 +104,13 @@ public class DatabaseController
 				PhotoEntry.getDefaultProjection(), 
 				null,
 				null,null,
-				null,null,null);
+				null,PhotoEntry.COLUMN_TIMESTAMP+DatabaseHelper.DESC,null);
 
 		if(c.moveToFirst()) 
 		{		
 			results = new ArrayList<Photo>();
 			
-			while(c.moveToNext()){
+			do{
             	
 				Photo photo = new Photo(
 	            			c.getString(c.getColumnIndex(PhotoEntry._ID)),
@@ -125,7 +125,7 @@ public class DatabaseController
 						);
                  
 				results.add(photo);
-            }
+            }while(c.moveToNext());
         }
 		
         c.close();

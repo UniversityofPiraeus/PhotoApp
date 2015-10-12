@@ -36,6 +36,9 @@ public class DatabaseHelper
     
     public static final String SELECT_ALL = "*";
     
+    public static final String DESC = " DESC";
+    public static final String ASC = " ASC";
+    
     private static final String SQL_CREATE_TABLES =
         "CREATE TABLE " + PhotoEntry.TABLE_NAME + " (" +
         PhotoEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
