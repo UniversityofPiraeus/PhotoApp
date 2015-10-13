@@ -110,7 +110,7 @@ public class DatabaseController
 		{		
 			results = new ArrayList<Photo>();
 			
-			do{
+			while(c.moveToNext()){
             	
 				Photo photo = new Photo(
 	            			c.getString(c.getColumnIndex(PhotoEntry._ID)),
@@ -125,7 +125,7 @@ public class DatabaseController
 						);
                  
 				results.add(photo);
-            }while(c.moveToNext());
+            }
         }
 		
         c.close();
